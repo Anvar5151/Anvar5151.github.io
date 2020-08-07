@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>first project</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--Scroll reveal CDN-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+  <script>
+    ScrollReveal({
+      duration: 1000
+    })
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="header">
+        <div class="header__right">
+          <div class="header__right__logo headline">
+            <img src="img/logo.png" alt="real-logo">
+          </div>
+          <div class="header__right__title headline">
+            <p>Realestate Company</p>
+          </div>
+          <div class="header__right__text tagline">
+            <p>Lorem Ipsum is simply dummy text</p>
+          </div>
+        </div>
+        <div class="header__left">
+          <div class="header__left__contact punchline">Call us: (214) 227-7669</div>
+        </div>
+      </div>
+      <nav>
+        <div class="nav__menu">
+          <div class="nav__menu__right">
+            <ul class="nav__menu__list">
+              <li class="nav__menu__item"><a href="index.html">Home</a></li>
+              <li class="nav__menu__item active"><a href="#">Our story</a></li>
+              <li class="nav__menu__item"><a href="#">Tenant</a></li>
+              <li class="nav__menu__item"><a href="#">Owner</a></li>
+              <li class="nav__menu__item"><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="nav__menu__left">
+            <div class="nav__authorisation">
+              <ul class="nav__authorisation_list">
+                <li class="nav__authorisation"><a href="#">Sign in</a></li>
+                <li class="nav__authorisation">/</li>
+                <li class="nav__authorisation"><a href="#">Sign up</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- slider -->
+  <section class="first__section">
+    <div class="container">
+      <div class="first__section__columns">
+        <div class="slider">
+          <div class="slider__img">
+            <img src="img/layer.jpg" alt="">
+            <!-- <img src="" alt="">
+              <img src="" alt="">
+              <img src="" alt="">
+              <img src="" alt=""> -->
+          </div>
+          <div class="slider__body">
+            <div class="slider__title">Lorem Ipsum is simply dummy text of</div>
+            <div class="slider__text">We work with investors to make managing your investments easy!</div>
+          </div>
+          <div class="slider__nav">
+            <div class="sider__nav__dots"></div>
+            <div class="sider__nav__dots "></div>
+            <div class="sider__nav__dots slider_dots_active"></div>
+            <div class="sider__nav__dots"></div>
+            <div class="sider__nav__dots"></div>
+          </div>
+        </div> <!-- slider ends -->
+        <div class="search__form">
+          <div class="search__tenats">
+            <div class="search__nav">Tenants</div>
+            <form action="" class="form__1">
+              <div class="adress__input">
+                <div class="adress">Address, Suburbs, Postcodes, or Regions </div>
+                <input type="text" placeholder="Example: Wichita Falls, Texas 76301">
+              </div>
+              <div class="input__checkbox">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" onchange="func_1()">
+                <label for="vehicle1"> Include surrounding suburbs</label>
+
+              </div>
+              <div class="select__input property">
+                <label for="cars">Property Type :</label>
+                <select id="cars" name="cars" onchange="func_3('cars')">
+                  <option value="volvo">Select one</option>
+                  <option value="saab">Select two</option>
+                  <option value="fiat">Select three</option>
+                  <option value="audi">select four</option>
+                </select>
+              </div>
+              <div class="select__input bedrooms">
+                <label for="car">Bedrooms :</label>
+                <select id="car" name="car" onchange="func_3('car')">
+                  <option value="volvo">Select one</option>
+                  <option value="saab">Select two</option>
+                  <option value="fiat">Select three</option>
+                  <option value="audi">select four</option>
+                </select>
+              </div>
+              <div class="search_btn">
+                <button name="search" value="" class="btn">Search</button>
+              </div>
+            </form>
+          </div>
+          <div class="search__owners">
+            <div class="search__nav_owners">Owners</div>
+            <!-- <form action="">
+                <div class="adress__input">
+                  <div class="adress">Address, Suburbs, Postcodes, or Regions </div>
+                  <input type="text" placeholder="Example: Wichita Falls, Texas 76301">
+                </div>
+                <div class="input__checkbox">
+                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                  <label for="vehicle1"> Include surrounding suburbs</label>
+                </div>
+                <div class="select__input property">
+                  <label for="cars">Property Type :</label>
+                    <select id="cars" name="cars">
+                      <option value="volvo" selected>Select one</option>
+                      <option value="saab">Select two</option>
+                      <option value="fiat">Select three</option>
+                      <option value="audi">select four</option>
+                    </select>
+                </div><div class="select__input bedrooms">
+                  <label for="cars">Bedrooms :</label>
+                    <select id="cars" name="cars">
+                      <option value="volvo" selected>Select one</option>
+                      <option value="saab">Select two</option>
+                      <option value="fiat">Select three</option>
+                      <option value="audi">select four</option>
+                    </select>
+                </div>
+                <div class="search_btn">
+                  <input type="button" name="search" value="Search">
+                </div>
+              </form> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- second section -->
+  <section class="second__section">
+    <div class="container">
+      <div class="second__section__columns">
+        <div class="second__section__f__column">
+          <!-- <div class="f__column__img"><img src="img/home.png" alt="icon"></div> -->
+          <div class="f__column__title"><a href="#">Buy a home</a></div>
+          <div class="f__column__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</div>
+        </div>
+        <div class="second__section__s__column">
+          <!-- <div class="f__column__img"><img src="img/home.png" alt="icon"></div> -->
+          <div class="f__column__title"><a href="">Sell a home</a></div>
+          <div class="f__column__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s, when an</div>
+        </div>
+        <div class="second__section__t__column">
+          <!-- <div class="f__column__img"><img src="img/home.png" alt="icon"></div> -->
+          <div class="f__column__title"><a href="">Rent a home</a></div>
+          <div class="f__column__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="third__section">
+    <div class="container">
+      <div class="home__gallery">
+        <div class="home_gallery__columns">
+          <div class="home__gallery__item animate_1-left">
+            <div class="gallery__img"><img src="img/img.png" alt=""></div>
+            <div class="gallery__body">
+              <p>4605 Bayonne Court </p>
+              <p> <a href=""> Arlington, TX 76016</a> </p>
+              <img src="img/lupa.png" alt="">
+            </div>
+          </div>
+          <div class="home__gallery__item animate_2-top">
+            <div class="gallery__img"><img src="img/img.png" alt=""></div>
+            <div class="gallery__body">
+              <p>4605 Bayonne Court </p>
+              <p> <a href=""> Arlington, TX 76016</a> </p>
+              <img src="img/lupa.png" alt="">
+            </div>
+          </div>
+          <div class="home__gallery__item animate_3-right">
+            <div class="gallery__img"><img src="img/img.png" alt=""></div>
+            <div class="gallery__body">
+              <p>4605 Bayonne Court </p>
+              <p> <a href=""> Arlington, TX 76016</a> </p>
+              <img src="img/lupa.png" alt="">
+            </div>
+          </div>
+          <div class="home__gallery__item animate_4-top">
+            <div class="gallery__img"><img src="img/img.png" alt=""></div>
+            <div class="gallery__body">
+              <p>4605 Bayonne Court </p>
+              <p> <a href=""> Arlington, TX 76016</a> </p>
+              <img src="img/lupa.png" alt="">
+            </div>
+          </div>
+          <div class="home__gallery__item animate_5-bottom">
+            <div class="gallery__img"><img src="img/img.png" alt=""></div>
+            <div class="gallery__body">
+              <p>4605 Bayonne Court </p>
+              <p> <a href=""> Arlington, TX 76016</a> </p>
+              <img src="img/lupa.png" alt="">
+            </div>
+          </div>
+          <div class="home__gallery__item animate_6-left">
+            <div class="gallery__img"><img src="img/img.png" alt=""></div>
+            <div class="gallery__body">
+              <p>4605 Bayonne Court </p>
+              <p> <a href=""> Arlington, TX 76016</a> </p>
+              <img src="img/lupa.png" alt="">
+            </div>
+          </div>
+          <div class="home__gallery__item animate_7-bottom">
+            <div class="gallery__img"><img src="img/img.png" alt=""></div>
+            <div class="gallery__body">
+              <p>4605 Bayonne Court </p>
+              <p> <a href=""> Arlington, TX 76016</a> </p>
+              <img src="img/lupa.png" alt="">
+            </div>
+          </div>
+          <div class="home__gallery__item animate_8-right">
+            <div class="gallery__img"><img src="img/img.png" alt=""></div>
+            <div class="gallery__body">
+              <p>4605 Bayonne Court </p>
+              <p> <a href=""> Arlington, TX 76016</a> </p>
+              <img src="img/lupa.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="form__section">
+    <div class="container">
+      <div class="form__part">
+        <div class="form__part__columns">
+          <div class="form__part__left ">
+            <form action="post">
+              <div class="member__login form__style animate-left">
+                <p>Member login</p>
+                <input type="text" name="" value="" placeholder="User name">
+                <input type="password" name="" value="" placeholder="Password">
+                <button type="button" name="button" class="login__btn btn">Login</button>
+              </div>
+              <div class="not__member animate-bottom">
+                <div class="link"><a href="">Not a member yet</a></div>
+                <div class="orange"><a href="">Signup Now</a></div>
+              </div>
+            </form>
+          </div>
+          <div class="form__part__right ">
+            <form action="">
+              <div class="subcribe form__style animate-right">
+                <p>Subscribe to our weekly newsletter</p>
+                <input type="email" name="" value="email adress">
+                <button type="button" name="button" class="subscribe__btn btn">Subscribe</button>
+              </div>
+              <div class="social__sets">
+                <a href="https://www.facebook.com/"><img src="../img/fb.png" alt="" class="widget"></a>
+                <a href="https://twitter.com/"><img src="../img/tw.png" alt="" class="widget"></a>
+                <a href="https://myaccount.google.com/"><img src="../img/plus.png" alt="" class="widget"></a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="footer__columns">
+          <div class="footer__column n1">
+            <div class="f__title"><a href="">About Us</a></div>
+
+            <div class="f__link"><a href="">About us</a></div>
+            <div class="f__link"><a href="">Why us</a></div>
+            <div class="f__link"><a href="">Customer Stories</a></div>
+            <div class="f__link"><a href="">Press Resources</a></div>
+            <div class="f__link"><a href="">Press Releases</a></div>
+            <div class="f__link"><a href="">Contact us</a></div>
+          </div>
+          <div class="footer__column n2">
+            <div class="f__title"><a href="">Proparties</a></div>
+
+            <div class="f__link"><a href="">Rent a home</a></div>
+            <div class="f__link"><a href="">Lease a home</a></div>
+            <div class="f__link"><a href="">Buy a home</a></div>
+            <div class="f__link"><a href="">Sell a home</a></div>
+            <div class="f__link"><a href="">Ask advices</a></div>
+          </div>
+          <div class="footer__column n3">
+            <div class="f__title"><a href=""> Costamer Testimonials</a></div>
+
+            <div class="f__text"><a href="">Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industr
+                standard dummy text ever since the 1500s, <br>
+                when an unknown printer took a </a></div>
+            <div class="f__link_text"><a href="">Lorem Ipsum is simply <br>
+                Owner, Lorem Ipsum</a></div>
+
+          </div>
+          <div class="footer__column n4">
+
+            <div class="footer__logo">
+              <img src="img/logo.png" alt="real-logo">
+            </div>
+            <div class="footer__logo__title">
+              <p>Realestate Company</p>
+            </div>
+            <div class="footer__right">
+              <p>© cssauthor.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+
+  </script>
+</body>
+<script src="js/main.js"></script>
+
+</html>
