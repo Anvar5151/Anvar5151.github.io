@@ -1,2 +1,0 @@
-# realEstate
-For potrfolio
