@@ -1,0 +1,156 @@
+<html>
+
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		@font-face {
+			font-family: Calculator;
+			src: url(fonts/Calculator.ttf);
+		}
+
+
+		body {
+			background-color: rgba(0, 0, 0, .1);
+		}
+
+		.calculator {
+			position: relative;
+			background-color: lightgray;
+			width: 350px;
+			height: 370px;
+			margin: 50px auto;
+			border: 1px solid #867F7D;
+			border-radius: 5px;
+			box-shadow: -3px 6px #999;
+		}
+
+		.cal {
+			display: block;
+			padding: 20px;
+			border-bottom: 2px solid rgba(0, 0, 0, .4);
+		}
+
+		.btn {
+			background-color: #B09F9A;
+			color: #fff;
+			font-weight: bold;
+			cursor: pointer;
+			text-align: center;
+			padding: 10px;
+			box-shadow: -2px 3px #999;
+			border-radius: 5px;
+			font-size: 18px;
+			text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+
+
+		}
+
+		.clear {
+			position: relative;
+			display: block;
+			right: 0px;
+			width: 60px;
+			height: 20px;
+			margin: 15px 0 0 0;
+			left: 230px;
+			font-weight: normal;
+			padding: 7px;
+
+		}
+
+
+
+		.btn:active {
+			box-shadow: 0 1px #666;
+			transform: translateY(2px);
+		}
+
+		.input {
+			width: 100%;
+			font-family: Calculator;
+			font-weight: bold;
+			height: 10%;
+			outline: none;
+			border: 1px solid #999;
+			box-shadow: 2px -2px #999;
+			font-size: 36px;
+			color: rgba(0, 0, 0, .6);
+			text-align: right;
+
+		}
+
+
+		.numbers {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-gap: 10px;
+			padding: 20px 2px 20px 10px;
+
+		}
+
+
+		.numb {
+			height: 20px;
+			width: 50px;
+			box-shadow: -1px 1px 0 2px #999;
+		}
+
+		.red {
+			background-color: #723A42;
+			opacity: 0.8;
+		}
+
+		.black {
+			background-color: #3B3D39;
+			opacity: .8;
+		}
+	</style>
+
+<body>
+	<form class="Calculator" name="calculator">
+		<div class="cal">
+			<input type="text" class="input" id="input" name="display" placeholder="0">
+			<a href="" style="text-decoration:none;">
+				<div class="clear btn black" onclick="clear()">CLEAR</div>
+			</a>
+		</div>
+		<div class="type__part">
+			<div class="numbers">
+				<div class="numb btn" onclick="calc('1')">1</div>
+				<div class="numb btn" value="2" onclick="calc('2')">2</div>
+				<div class="numb btn" onclick="calc('3')">3</div>
+				<div class="numb btn" onclick="calc('/')">/</div>
+				<div class="numb btn" onclick="calc('4')">4</div>
+				<div class="numb btn" onclick="calc('5')">5</div>
+				<div class="numb btn" onclick="calc('6')">6</div>
+				<div class="numb btn" onclick="calc('*')">*</div>
+				<div class="numb btn" onclick="calc('7')">7</div>
+				<div class="numb btn" onclick="calc('8')">8</div>
+				<div class="numb btn" onclick="calc('9')">9</div>
+				<div class="numb btn" onclick="calc('-')">-</div>
+				<div class="numb btn" onclick="calc('0')">0</div>
+				<div class="numb btn" onclick="calc(',')">,</div>
+				<div class="numb btn equal" onclick="solve()">=</div>
+				<div class="numb btn red" onclick="calc('+')">+</div>
+			</div>
+		</div>
+	</form>
+</body>
+<script>
+	function calc(val) {
+		document.getElementById("input").value += val;
+	}
+
+	function solve() {
+		let x = document.getElementById("input").value;
+		let y = eval(x);
+		document.getElementById("input").value = y;
+	}
+
+	function clear() {
+		document.getElementById("input").value = "";
+	}
+</script>
+
+</html>
